@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
 import { HashRouter } from 'react-router-dom';
 import LoginProvider from './context/Login/LoginProvider';
+import ThemeProvider from './context/Theme/ThemeProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter>
         <LoginProvider>
-            <App />
+            <ThemeProvider>
+                <App />
+            </ThemeProvider>
         </LoginProvider>
     </HashRouter>
 );

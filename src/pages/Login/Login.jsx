@@ -11,7 +11,7 @@ const Login = () => {
 
     const onFinish = (values) => {
         setUser(values.username);
-        setIsLogged(true);
+        setIsLogged(true);  
         navigate('/');
     };
     const onFinishFailed = (errorInfo) => {

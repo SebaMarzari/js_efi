@@ -54,3 +54,11 @@
 .appContainer {
     height: 100%;
 }
+
+.ant-switch {
+    margin: auto 0rem !important;
+}
+
+.ant-select {
+    margin: auto 1rem !important;
+}

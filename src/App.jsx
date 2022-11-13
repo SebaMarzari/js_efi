@@ -1,11 +1,10 @@
 import './App.css';
-import { Button } from 'antd'
+import { Button, Switch, Select } from 'antd'
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Contact from './pages/Contact/Contact';
 import Product from './pages/Product/Product';
 import { Routes, Route, Link } from 'react-router-dom'
-import LoginProvider from './context/Login/LoginProvider';
 import LoginContext from './context/Login/LoginContext';
 import { useContext } from 'react';
 
@@ -29,6 +28,21 @@ function App() {
                         Registrarse
                     </Link>
                 </Button> : <></>}
+                <Select
+                    defaultValue="Español"
+                    options={
+                        [
+                            { value: 'Español', label: 'Español' },
+                            { value: 'English', label: 'English' },
+                        ]
+                    }
+                />
+                <Switch
+                    //checked={theme === 'dark'}
+                    //onChange={changeTheme}
+                    checkedChildren="Dark"
+                    unCheckedChildren="Light"
+                />
             </nav>
             <Routes>
                 <Route path='/' element={<Home />} />
