@@ -2,14 +2,18 @@ import ThemeContext from "./ThemeContext";
 import { useState } from "react";
 
 const LoginProvider = ({ children }) => {
-    const [darkMode, serDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        console.log(darkMode)
+        document.body.style.backgroundColor = !darkMode ? "#395999" : "#fff";
+        setDarkMode(!darkMode);
+    };
 
     const value = {
         darkMode,
-        serDarkMode,
-    };
-    const toggleDarkMode = () => {
-        serDarkMode(!darkMode);
+        setDarkMode,
+        toggleDarkMode,
     };
 
     return (

@@ -6,10 +6,13 @@ import Contact from './pages/Contact/Contact';
 import Product from './pages/Product/Product';
 import { Routes, Route, Link } from 'react-router-dom'
 import LoginContext from './context/Login/LoginContext';
+import ThemeContext from './context/Theme/ThemeContext';
 import { useContext } from 'react';
 
 function App() {
     const { isLogged } = useContext(LoginContext);
+    const { toggleDarkMode } = useContext(ThemeContext);
+
     return (
         <div className='appContainer'>
             <nav className='navBar'>
@@ -25,7 +28,7 @@ function App() {
                 </Button>
                 {!isLogged ? <Button>
                     <Link to='/login'>
-                        Registrarse
+                        Iniciar Sesion
                     </Link>
                 </Button> : <></>}
                 <Select
@@ -39,7 +42,7 @@ function App() {
                 />
                 <Switch
                     //checked={theme === 'dark'}
-                    //onChange={changeTheme}
+                    onChange={() => toggleDarkMode()}
                     checkedChildren="Dark"
                     unCheckedChildren="Light"
                 />

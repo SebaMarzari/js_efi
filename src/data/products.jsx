@@ -11,41 +11,47 @@ export const dataProducts = [
         "title": "Malla de Competicion para hombre",
         "description": "Malla de Competicion para hombre",
         "price": "50.000",
-        "image": malla_comp_hombre
+        "image": malla_comp_hombre,
+        "quantity": 10
     },
     {
         "id": "2",
         "title": "Malla de Competicion para mujer",
         "description": "Malla de Competicion para mujer",
         "price": "60.000",
-        "image": malla_comp_mujer
+        "image": malla_comp_mujer,
+        "quantity": 20
     },
     {
         "id": "3",
         "title": "Manoplas",
         "description": "Manoplas grandes",
         "price": "1.000",
-        "image": manoplas
+        "image": manoplas,
+        "quantity": 30
     },
     {
         "id": "4",
         "title": "Patas de Rana",
         "description": "Patas de Rana 44-46",
         "price": "5.000",
-        "image": patas_rana
+        "image": patas_rana,
+        "quantity": 5
     },
     {
         "id": "5",
         "title": "Pull boy",
         "description": "Pull boy mediano",
         "price": "600",
-        "image": pull
+        "image": pull,
+        "quantity": 0
     },
     {
         "id": "6",
         "title": "Snorkel",
         "description": "Snorkel mediano",
         "price": "700",
-        "image": snorkel
+        "image": snorkel,
+        "quantity": 30
     }    
 ]
