@@ -1,0 +1,20 @@
+.productsCardContainer {
+    column-count: 2;
+    width: 50%;
+
+}
+
+.cardContainer {
+    display: inline-block;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.cardContainer:hover {
+    box-shadow: 0 3px 10px 0 rgba(0, 17, 255, 0.5) !important;
+}
+
+.productImgStyle {
+    height: inherit !important;
+    width: inherit !important;
+}
