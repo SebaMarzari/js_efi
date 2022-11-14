@@ -7,13 +7,17 @@ import 'antd/dist/antd.css';
 import { HashRouter } from 'react-router-dom';
 import LoginProvider from './context/Login/LoginProvider';
 import ThemeProvider from './context/Theme/ThemeProvider';
+import TranslateProvider from './context/Translate/TranslateProvider';
+import './services/i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter>
         <LoginProvider>
             <ThemeProvider>
-                <App />
+                <TranslateProvider>
+                    <App />
+                </TranslateProvider>
             </ThemeProvider>
         </LoginProvider>
     </HashRouter>

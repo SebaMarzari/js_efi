@@ -7,41 +7,46 @@ import Product from './pages/Product/Product';
 import { Routes, Route, Link } from 'react-router-dom'
 import LoginContext from './context/Login/LoginContext';
 import ThemeContext from './context/Theme/ThemeContext';
+import TranslateContext from './context/Translate/TranslateContext';
 import { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function App() {
     const { isLogged } = useContext(LoginContext);
-    const { toggleDarkMode } = useContext(ThemeContext);
+    const { toggleDarkMode, darkMode } = useContext(ThemeContext);
+    const { toggleLanguage } = useContext(TranslateContext);
+    const { t } = useTranslation();
 
     return (
         <div className='appContainer'>
             <nav className='navBar'>
                 <Button>
                     <Link to='/'>
-                        Inicio
+                        {t("home")}
                     </Link>
                 </Button>
                 <Button>
                     <Link to='/contact'>
-                        Contacto
+                        {t("contact")}
                     </Link>
                 </Button>
                 {!isLogged ? <Button>
                     <Link to='/login'>
-                        Iniciar Sesion
+                        {t("login")}
                     </Link>
                 </Button> : <></>}
                 <Select
                     defaultValue="Español"
                     options={
                         [
-                            { value: 'Español', label: 'Español' },
-                            { value: 'English', label: 'English' },
+                            { value: 'es', label: 'Español' },
+                            { value: 'en', label: 'English' },
                         ]
                     }
+                    onSelect={(e) => toggleLanguage(e)}
                 />
                 <Switch
-                    //checked={theme === 'dark'}
+                    checked={darkMode}
                     onChange={() => toggleDarkMode()}
                     checkedChildren="Dark"
                     unCheckedChildren="Light"

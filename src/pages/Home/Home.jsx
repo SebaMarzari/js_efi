@@ -4,6 +4,7 @@ import { dataProducts } from '../../data/products';
 import Products from '../../components/Products/Products'
 import LoginContext from "../../context/Login/LoginContext";
 import { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const contentStyle = {
     height: '100%',
@@ -13,10 +14,11 @@ const contentStyle = {
 
 const Home = () => {
     const { user } = useContext(LoginContext);
+    const { t } = useTranslation();
     return (
         <div className='homeContainer'>
             <h1 className='titleStyle'>
-                Bienvenido {user}
+                {`${t('welcome')} ${user ? user : ''}`}
             </h1>
             <Carousel autoplay className='carouselStyle' style={contentStyle}>
                 {
@@ -30,8 +32,8 @@ const Home = () => {
                 }
             </Carousel>
             <div className='infoStyle'>
-                <h2 className='descriptionStyle'>3 CUOTAS SIN INTERES</h2>
-                <h2 className='descriptionStyle'>ENVÍOS A TODO EL PAÍS</h2>
+                <h2 className='descriptionStyle'>{t("interest")}</h2>
+                <h2 className='descriptionStyle'>{t("shipping")}</h2>
             </div>
             <div className='productsContainer'>
                 <Products />

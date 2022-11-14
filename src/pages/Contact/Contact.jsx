@@ -1,24 +1,27 @@
 import { Button, Form, Input, InputNumber } from 'antd';
 import React from 'react';
-const layout = {
-    labelCol: {
-        span: 4,
-    },
-    wrapperCol: {
-        span: 16,
-    },
-};
-const validateMessages = {
-    required: '${label} is required!',
-    types: {
-        email: '${label} is not a valid email!',
-        number: '${label} is not a valid number!',
-    },
-    number: {
-        range: '${label} must be between ${min} and ${max}',
-    },
-};
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
+    const { t } = useTranslation();
+    const layout = {
+        labelCol: {
+            span: 4,
+        },
+        wrapperCol: {
+            span: 16,
+        },
+    };
+    const validateMessages = {
+        required: '${label} ' + t("required"),
+        types: {
+            email: '${label} ' + t("invalidEmail"),
+            number: '${label} ' + t("invalidNumber"),
+        },
+        number: {
+            range: '${label} ' + t("between"),
+        },
+    };
     const onFinish = (values) => {
         console.log(values);
     };

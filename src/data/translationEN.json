@@ -1,0 +1,25 @@
+
+{
+    "welcome": "Welcome",
+    "home": "Home",
+    "login": "Login",
+    "contact": "Contact",
+    "interest": "3 installments without interest",
+    "shipping": "free shipping",
+    "comp_man": "Men's competition leotard",
+    "comp_man_description": "Men's competition leotard",
+    "mitts": "Mitts",
+    "large_mitts": "Large Mitts",
+    "frog_legs": "Frog Legs",
+    "frog_legs_size": "Frog Legs 44-46",
+    "pull_boy": "Pull boy",
+    "pull_boy_size": "Pull boy medium",
+    "comp_woman": "Women's competition leotard",
+    "comp_woman_description": "Women's competition leotard",
+    "snorkel": "Snorkel",
+    "snorkel_size": "Snorkel midium",
+    "required": "is required!",
+    "invalidEmail": "is not a valid email!",
+    "invalidNumber": "is not a valid number!",
+    "between": "must be between 0 and 99!"
+}

@@ -1,0 +1,25 @@
+{
+    "welcome": "Bienvenido",
+    "home": "Inicio",
+    "login": "Iniciar sesión",
+    "contact": "Contacto",
+    "interest": "3 cuotas sin interés",
+    "shipping": "Envío gratis a todo el pais",
+    "comp_man": "Malla competicion para hombre",
+    "comp_man_description": "Malla competicion para hombre",
+    "mitts": "Manoplas",
+    "large_mitts": "Manoplas grandes",
+    "frog_legs": "Patas de rana",
+    "frog_legs_size": "Patas de rana 44-46",
+    "pull_boy": "Pull boy",
+    "pull_boy_size": "Pull boy mediano",
+    "comp_woman": "Malla competicion mujer",
+    "comp_woman_description": "Malla competicion mujer",
+    "snorkel": "Snorkel",
+    "snorkel_size": "Snorkel mediano",
+    "required": "es requerido",
+    "not_valid_email": "no es un email valido!",
+    "not_valid_number": "no es un numero valido!",
+    "between": "debe estar entre 0 y  99!"
+
+}
