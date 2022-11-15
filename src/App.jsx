@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Contact from './pages/Contact/Contact';
 import Product from './pages/Product/Product';
+import NotFound from './pages/404NotFound/404NotFound';
 import { Routes, Route, Link } from 'react-router-dom'
 import LoginContext from './context/Login/LoginContext';
 import ThemeContext from './context/Theme/ThemeContext';
@@ -57,6 +58,7 @@ function App() {
                 <Route path='/login' element={<Login />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/product/:id' element={<Product />} />
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </div>
     );

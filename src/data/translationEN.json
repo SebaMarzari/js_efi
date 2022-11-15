@@ -21,5 +21,7 @@
     "required": "is required!",
     "invalidEmail": "is not a valid email!",
     "invalidNumber": "is not a valid number!",
-    "between": "must be between 0 and 99!"
+    "between": "must be between 0 and 99!",
+    "404Page": "404 Page Not Found",
+    "404Message": "The requested page was not found"
 }

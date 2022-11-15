@@ -20,6 +20,7 @@
     "required": "es requerido",
     "not_valid_email": "no es un email valido!",
     "not_valid_number": "no es un numero valido!",
-    "between": "debe estar entre 0 y  99!"
-
+    "between": "debe estar entre 0 y  99!",
+    "404Page": "404 Pagina no encontrada",
+    "404Message": "No se encontro la pagina solicitada"
 }
